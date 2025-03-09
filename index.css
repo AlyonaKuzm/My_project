@@ -13,6 +13,7 @@ body{
     font-weight: 500;
 }
 .small_title{
+
     font-size: 48px;
     color: #fff;
     text-align: center;
@@ -25,7 +26,6 @@ body{
 .container{
     max-width: 1380px;
     width: 100%;
-    width: 1380px;
     margin: 0 auto; /*позиционирование по центру*/
 }
 .header{
