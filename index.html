@@ -3,82 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>News</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <head>header</head>
-    <aside>aside</aside>
-    <main>main</main>
-     <section>
-        section hero
-     </section>
-     <section>
-        section news
-        <ul>
-            <li>nnn</li>
-            <li>mmm</li>
-            <li>lll</li>
-        </ul>
-        <ol>
-            <li>
-               qqq
-               <ul>
-                <li>11</li>
-                <li>22</li>
-                <li>33</li>
-               </ul>
-            </li>
-            <li>ggg</li>
-            <li>ddd</li>
-        </ol>
-     </section>
-     <article>
-        article
-        <h4>post title</h4>
-        <a href="http://google.com/" target = "_blank"> click me</a>
-     </article>
-    <footer>footer</footer>
-    <form action="">
-        <label for="name">name</label>
-        <input type="text" name="name" id="name" placeholder="Alyona"/>
-        <label for="phone">phone</label>
-        <input type="tel" name="phone" id="phone"/>
-        <label for="age">age</label>
-        <input type="number" name="age" id="age"/>
-        <label for="date">birth date</label>
-        <input type="date" name="date" id="date"/>
-        <select name="" id="">
-            <option value="red">red</option>
-            <option value="yellow">yellow</option>
-            <option value="green">green</option>
-        </select>
-        <button>submit</button>        
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Favourite fruit</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Alyona</td>
-                <td>35</td>
-                <td>lemon</td>
-            </tr>
-            <tr>
-                <td>Masha</td>
-                <td>30</td>
-                <td>apple</td>
-            </tr>
-            <tr>
-                <td>Sasha</td>
-                <td>32</td>
-                <td>banana</td>
-            </tr>
-        </tbody>
-    </table>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav">
+                <img src="pictures/menu.svg" alt="Меню">
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            Новости
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Статьи
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Интервью
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Поддержка
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="bag" src="pictures/bag.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="trip">
+                <h1>Путешествие в неизведанные уголки вселенной</h1>
+                <p>
+                    Последние новости, научно-популярные статьи и интервью с известными учеными — космос ближе, чем вы думаете
+                </p>
+                <a href="#" class="btn">
+                    Подписаться на рассылку
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="news" class="news">
+            <div class="container">
+                <h2>Новости</h2>                              
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="banner">
+                    <h3>Мы предлагаем вам узнать удивительные факты о нашей вселенной и углубить свои знания о планах человечества по освоению космоса</h3>
+                    <a href="#" class="btn">
+                        Подписаться на рассылку
+                    </a>
+                </div>
+            </div>
+        </section>      
+        <section id="articles" class="articles">
+            <div class="container">
+                <h2>Научно-популярные статьи</h2>
+
+            </div>
+            
+        </section>
+        
+        <section id="mail" class="mail">            
+            <div class="container">
+                <h2>Вы готовы отправиться в увлекательное путешествие к звездам?</h2>
+            </div>
+        </section> 
+
+        <section id="faq" class="faq">            
+            <div class="container">
+                <h2>Ответы на вопросы</h2>
+            </div>
+        </section>       
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        Условия предоставления услуг
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Конфиденциальность
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Предложения
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Дополнительно
+                    </a>
+                </li>                
+            </ul>
+
+        </div>
+    </footer>
 </body>
 </html>
