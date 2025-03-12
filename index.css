@@ -4,26 +4,28 @@ body{
     padding: 0;
     margin: 0;
 }
-h1{
+
+.main_title{
     font-size: 80px;
     font-weight: 500;
 }
-h2{
+.sub_title{
     font-size: 64px;
     font-weight: 500;
 }
-h3{
+.small_title{
     font-size: 48px;
     color: #fff;
     text-align: center;
     font-weight: 500;
 }
-h4{
+.mini_title{
     font-size: 36px;
     font-weight: 500;
 }
 .container{
-    width: 1380px;
+    max-width: 1380px;
+    width: 100%;
     margin: 0 auto; /*позиционирование по центру*/
 }
 .header{
@@ -35,6 +37,9 @@ header a {
 }
 .menu{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
  }
 .menu li a{
     text-decoration: none;
