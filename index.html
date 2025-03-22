@@ -13,7 +13,7 @@
     <header id="header" class="header">
         <div class="menu_bg">
             <div class="container">
-                <div class="nav">
+                <nav class="nav">
                     <img src="pictures/menu.svg" alt="Меню">
                     <ul class="menu">
                         <li>
@@ -42,18 +42,18 @@
                             </a>
                         </li>
                     </ul>
-                </div> 
+                </nav> 
             </div>
         </div>
         <div class="container">
             <div class="trip">
-                <h1>Путешествие в неизведанные уголки вселенной</h1>
+                <h1 class="title_main">Путешествие в неизведанные уголки вселенной</h1>
                 <p>
                     Последние новости, научно-популярные статьи и интервью с известными учеными — космос ближе, чем вы думаете
                 </p>
-                <a href="#" class="btn">
+                <button href="#" class="btn">
                     Подписаться на рассылку
-                </a>
+                </button>
             </div>
         </div>
     </header>
@@ -61,17 +61,31 @@
     <main>
         <section id="news" class="news">
             <div class="container">
-                <h2>Новости</h2>  
+                <h2 class="title_sub">Новости</h2>  
                 <div class="news_block">
                     <div class="news_card">
                         <div class="news_content">
                             <p class="data">02.02.2024</p>
-                            <h4>NASA показало подсвеченный разными цветами Меркурий: такие фото сделал зонд </h4>
+                            <h4 class="title_small">NASA показало подсвеченный разными цветами Меркурий: такие фото сделал зонд </h4>
                             <p class="descrip">NASA опубликовало снимок Меркурия, сделанный около десяти лет назад зондом Messenger, разработанным для обнаружения минералов на поверхности планеты. На этом снимке планета не серая, как принято считать, а подсвеченная разными цветами.
                             </p>
                         </div>
-                        <div class="news_btn">    
+                        <button class="news_btn">
+                            <a href="#">Источник</a>
+                            <a href="#"><img src="pictures/chevron_default.svg" alt=""> </a> 
+                        </button>
+                    </div>
+                    <div class="news_card">
+                        <div class="news_content">
+                            <p class="data">02.02.2024</p>
+                            <h4 class="title_small">NASA показало подсвеченный разными цветами Меркурий: такие фото сделал зонд </h4>
+                            <p class="descrip">NASA опубликовало снимок Меркурия, сделанный около десяти лет назад зондом Messenger, разработанным для обнаружения минералов на поверхности планеты. На этом снимке планета не серая, как принято считать, а подсвеченная разными цветами.
+                            </p>
                         </div>
+                        <button class="news_btn">
+                            <a href="#">Источник</a>
+                            <a href="#"><img src="pictures/chevron_default.svg" alt=""></a>      
+                        </button>
                     </div>
                     <div class="news_card">
                         <div class="news_content">
@@ -80,28 +94,22 @@
                             <p class="descrip">NASA опубликовало снимок Меркурия, сделанный около десяти лет назад зондом Messenger, разработанным для обнаружения минералов на поверхности планеты. На этом снимке планета не серая, как принято считать, а подсвеченная разными цветами.
                             </p>
                         </div>
-                        <div class="news_btn">    
-                        </div>
+                        <button class="news_btn"> 
+                            <a href="#">Источник</a>
+                            <a href="#"><img src="pictures/chevron_default.svg" alt=""></a>     
+                        </button>
                     </div>
                     <div class="news_card">
                         <div class="news_content">
                             <p class="data">02.02.2024</p>
-                            <h4>NASA показало подсвеченный разными цветами Меркурий: такие фото сделал зонд </h4>
+                            <h4 class="title_small">NASA показало подсвеченный разными цветами Меркурий: такие фото сделал зонд </h4>
                             <p class="descrip">NASA опубликовало снимок Меркурия, сделанный около десяти лет назад зондом Messenger, разработанным для обнаружения минералов на поверхности планеты. На этом снимке планета не серая, как принято считать, а подсвеченная разными цветами.
                             </p>
                         </div>
-                        <div class="news_btn">    
-                        </div>
-                    </div>
-                    <div class="news_card">
-                        <div class="news_content">
-                            <p class="data">02.02.2024</p>
-                            <h4>NASA показало подсвеченный разными цветами Меркурий: такие фото сделал зонд </h4>
-                            <p class="descrip">NASA опубликовало снимок Меркурия, сделанный около десяти лет назад зондом Messenger, разработанным для обнаружения минералов на поверхности планеты. На этом снимке планета не серая, как принято считать, а подсвеченная разными цветами.
-                            </p>
-                        </div>
-                        <div class="news_btn">    
-                        </div>
+                        <button class="news_btn">
+                            <a href="#">Источник</a>
+                            <a href="#"><img src="pictures/chevron_default.svg" alt=""></a>     
+                        </button>
                     </div>
                 </div> 
                 <div class="pages">
@@ -112,32 +120,61 @@
         <section>
             <div class="container">
                 <div class="banner">
-                    <h3>Мы предлагаем вам узнать удивительные факты о нашей вселенной и углубить свои знания о планах человечества по освоению космоса</h3>
-                    <a href="#" class="btn">
+                    <h3 class="title_medium">Мы предлагаем вам узнать удивительные факты о нашей вселенной и углубить свои знания о планах человечества по освоению космоса</h3>
+                    <button href="#" class="btn">
                         Подписаться на рассылку
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>      
         <section id="articles" class="articles">
             <div class="container">
-                <h2>Научно-популярные статьи</h2>
+                <h2 class="title_sub">Научно-популярные статьи</h2>
                 <p>
                     Помогут вам лучше понять структуру и законы вселенной
                 </p>
-                <div class="articles_3">
-
+                <div class="articles_container">
+                    <div class="article">
+                        <h4>На Луне наступила ночь и японский SLIM снова «уснул»</h4>
+                        <p>Японский лунный модуль SLIM снова отключился из-за наступления на спутнике Земли лунной ночи</p>
+                        <img src="pictures/article1.jpg" alt="">
+                        <div class="article_btn">
+                            <a href="#">Подробнее</a>
+                            <a href="#"><img src="pictures/chevron_default.svg" alt="">
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="article">
+                        <h4>На Луне наступила ночь и японский SLIM снова «уснул»</h4>
+                        <p>Японский лунный модуль SLIM снова отключился из-за наступления на спутнике Земли лунной ночи</p>
+                        <img src="pictures/article2.jpg" alt="">
+                        <div class="article_btn">
+                            <a href="#">Подробнее</a>
+                            <a href="#"><img src="pictures/chevron_default.svg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="article">
+                        <h4>На Луне наступила ночь и японский SLIM снова «уснул»</h4>
+                        <p>Японский лунный модуль SLIM снова отключился из-за наступления на спутнике Земли лунной ночи</p>
+                        <img src="pictures/article3.jpg" alt="">
+                        <div class="article_btn">
+                            <a href="#">Подробнее</a>
+                            <a href="#"><img src="pictures/chevron_default.svg" alt="">
+                            </a>
+                        </div> 
+                    </div>                    
                 </div>
-                <a href="#" class="btn">
+                <button href="#" class="btn">
                     Посмотреть всё
-                </a>
+                </button>
             </div>
             
         </section>
         
         <section id="mail" class="mail">            
             <div class="container">
-                <h2>Вы готовы отправиться в увлекательное путешествие к звездам?</h2>
+                <h2 class="title_sub">Вы готовы отправиться в увлекательное путешествие к звездам?</h2>
                 <div class="email">
 
                 </div>
@@ -146,7 +183,7 @@
 
         <section id="faq" class="faq">            
             <div class="container">
-                <h2>Ответы на вопросы</h2>
+                <h2 class="title_sub">Ответы на вопросы</h2>
                 <div class="faq_list">
                 </div>
             </div>

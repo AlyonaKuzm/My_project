@@ -15,12 +15,12 @@ a{
     color: #fff;
     text-decoration: none;
 }
-h1{
+.title_main{
     font-size: 80px;
     font-weight: 500;
     line-height: 80px;
 }
-h2{
+.title_sub{
     font-size: 64px;
     font-weight: 500;
     line-height: 70px;
@@ -28,7 +28,7 @@ h2{
     margin-top: 120px;
     margin-bottom: 40px;
 }
-h3{
+.title_medium{
     font-size: 48px;
     font-weight: 500;
     line-height: 60px;
@@ -36,14 +36,15 @@ h3{
     color: #fff;
     text-align: center;    
 }
-h4,h6{
+.title_small{
     font-size: 36px;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: -1.6px;
 }
 .container{
-    width: 1380px;
+    max-width: 1380px;
+    width: 100%;
     margin: 0 auto; /*позиционирование по центру*/
     position: relative;
     z-index: 2;
@@ -61,6 +62,7 @@ h4,h6{
     width: 373px;
     height: 54px;
     border-radius: 10px;
+    color: #fff;
 }
 .btn:hover{
     background-color: #DC95FD;
@@ -100,6 +102,7 @@ h4,h6{
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
+    letter-spacing: -0.2px;
     width: 912px;
     height: 60px;
     margin-top: 0px;
@@ -152,17 +155,48 @@ ul, li{
     margin: 0;
     width: 614px;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
+    margin-bottom: 87px;
 }
+.news_btn a{
+    color: #4A5CFF;
+ }
+ .news_btn img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+ }
+ .news_btn{
+    width: 118px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    margin-bottom: 32px;
+ }
 .descrip{
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     height: 95px;
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     text-overflow: ellipsis;
 }
 .news_content h4{
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     text-overflow: ellipsis;
     margin: 0;
+    padding: 0px;
     height: 86px;
 }
 .data{
@@ -200,15 +234,19 @@ ul, li{
     background-color: #00000099;
     pointer-events: none;
     z-index: 1; 
+    border-radius: 24px;
 }
  .banner h3{
-    width: 1260px;
+    max-width: 1260px;
     height: 180px;
     margin: 0px 0px 40px 0px;
     position: relative;
     z-index: 2; 
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
  }
- .banner a{
+ .banner button{
     position: relative;
     margin: auto;
     z-index: 2; 
@@ -223,14 +261,16 @@ ul, li{
     margin-top: 0px;
     margin-bottom: 0px;
  }
- .articles_3{
+ .articles_container{
     height: 597px;
     border: 1px solid #BB2CFF;
     box-sizing: border-box;
     margin-top: 40px;
     margin-bottom: 40px;
+    display: flex;
+    gap: 24px;
  }
- .articles a{
+ .articles button{
     width: 281px !important;
  }
  .articles h2{
@@ -244,6 +284,54 @@ ul, li{
     margin-bottom: 40px;
     margin-top: 0px;
     height: 30px;
+ }
+ .article{
+    width: 444px;
+    height: 597px;
+    background-color: #F3F3F3;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+ }
+ .article h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin: 0px;
+ }
+ .article p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.6px;
+    margin: 0px;
+    width: 380px;
+    height: 80px;
+ }
+ .article img{
+    width: 380px;
+    height: 279px;
+    border-radius: 24px;
+    margin: 0px;
+ }
+ .article_btn{
+    width: 133px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .article_btn a{
+    color: #4A5CFF;
+ }
+ .article_btn img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
  }
 .faq_list{
     height: 429px;
