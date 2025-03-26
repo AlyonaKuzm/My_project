@@ -131,7 +131,7 @@ while(j<string.length){
     j++;
 }
 //Задачи на условные ветвления
-const checkNumber = function(number){
+/*const checkNumber = function(number){
     if (number < 0){
         console.log("Отрицательное число")
     }else if(number===0){
@@ -198,4 +198,88 @@ const getMonthName = function(monthNum){
     }
     return month;
 }
-console.log(getMonthName(5));
+console.log(getMonthName(5));*/
+/*1/
+const person = {
+    name: "Alyona",
+    age: 40,
+    city: "Voronezh"
+}
+const hobbies = ["рисование", "чтение", "фильмы"]
+person.hobbies = hobbies;
+person.favouriteFoods = ["пицца", "пюре"]
+person["secret prop"] = "secret"
+delete person["secret prop"]
+delete person.hobbies
+delete person.favouriteFoods
+console.log(person)*/
+const car = new Object();
+car.brand = "Toyota",
+car.model = "Camry",
+car.year = 2020
+/*for (let key in car) {
+    console.log(key);
+}*/
+/*Object.keys(car).forEach(function(key) {
+    console.log(key);
+});*/
+/*for (let [key, value] of Object.entries(car)) {
+    console.log(key);
+}*/
+/*for(let prop in car){
+    console.log(prop,car[prop])
+}*/
+/*const keys = Object.keys(car).forEach((key)=>{
+    console.log(key)
+})*/
+/*Object.entries(car).forEach(([key,value])=>{
+    console.log(key, 'key')
+    console.log(value, 'value')
+})*/
+const numbers = [10,2,33,408,55,6]
+/*for(let i = 0; i<=numbers.length; i++){
+    console.log(numbers[i])
+}
+numbers.pop();
+numbers.push(888);
+numbers.shift();
+numbers.unshift(888)
+numbers[1] =11;
+console.log(numbers);*/
+numbers.forEach((el) =>{
+    console.log(el)
+})
+const array1 = [1,2,3];
+const array2 = [4,5,6]
+const array3 = [7,8,9]
+const newArray = array1.concat(array2, array3)
+array1[0] = 'foo'
+console.log(newArray)
+/*const hasNumber7 = newArray.some((el)=>
+    el ===7);
+console.log(hasNumber7)
+console.log(newArray.includes(1));*/
+/*const res = newArray.reduce((acc, curr)=>{
+    return acc + curr;
+})
+console.log(res)
+const res = [...newArray].sort((a,b) => b-a)
+console.log(res)
+const massiveNew = ['Mike', 'Lena', 'John', 'Kir']
+console.log(massiveNew.sort((a,b) =>b.localeCompare(a)));*/
+const person = {
+    name: 'Alyona',
+    sayHello: function(){
+        console.log(`Привет, меня зовут, ${this.name}!`);
+    }
+}
+person.sayHello();
+const student = {
+    name: 'Mike',
+    sayHello: function(){
+        console.log(`Привет, меня зовут, ${this.name}!`);
+    }
+}
+student.sayHello();
+const studentSayHello = person.sayHello.bind(student);
+studentSayHello(); 
