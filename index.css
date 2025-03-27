@@ -15,12 +15,19 @@ a{
     color: #fff;
     text-decoration: none;
 }
-.title_main{
+ul, li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.main_title{
     font-size: 80px;
     font-weight: 500;
     line-height: 80px;
 }
-.title_sub{
+.sub_title{
     font-size: 64px;
     font-weight: 500;
     line-height: 70px;
@@ -28,7 +35,7 @@ a{
     margin-top: 120px;
     margin-bottom: 40px;
 }
-.title_medium{
+.medium_title{
     font-size: 48px;
     font-weight: 500;
     line-height: 60px;
@@ -36,7 +43,7 @@ a{
     color: #fff;
     text-align: center;    
 }
-.title_small{
+.small_title{
     font-size: 36px;
     font-weight: 500;
     line-height: 40px;
@@ -49,7 +56,7 @@ a{
     position: relative;
     z-index: 2;
 }
-.btn{
+.button{
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -64,10 +71,10 @@ a{
     border-radius: 10px;
     color: #fff;
 }
-.btn:hover{
+.button:hover{
     background-color: #DC95FD;
 }
-.btn:active{
+.button:active{
     background-color: #BB2CFF80;
 }
 .header{
@@ -94,7 +101,6 @@ a{
 }
 .header h1{
     width: 912px;
-    height: 240px;
     margin-bottom: 24px;
     margin-top: 169px;
 }
@@ -104,7 +110,6 @@ a{
     line-height: 30px;
     letter-spacing: -0.2px;
     width: 912px;
-    height: 60px;
     margin-top: 0px;
     margin-bottom: 40px;
 }
@@ -131,13 +136,6 @@ a{
     width: 20px;
     margin-bottom: -6px;
  }
-ul, li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
 .news_block{
     box-sizing: border-box;
     display: grid;
@@ -150,36 +148,39 @@ ul, li{
     height: 440px;
     background-color: #F3F3F3;
     border-radius: 24px;
+    box-sizing: border-box;
 }
 .news_content{
     margin: 0;
-    width: 614px;
     padding: 32px;
     display: flex;
     flex-direction: column;
     gap: 24px;
     box-sizing: border-box;
-    margin-bottom: 87px;
+    margin-bottom: 55px;
 }
-.news_btn a{
+.news_button a{
     color: #4A5CFF;
  }
- .news_btn img{
+ .news_button img{
     width: 20px;
     height: 20px;
-    margin-top: 5px;
+    margin-top: 6px;
  }
- .news_btn{
+ .news_button img:hover{
+    fill: #7E88E4;
+ }
+
+ .news_button{
     width: 118px;
     height: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
     border: none;
     background: none;
-    margin-bottom: 32px;
+    margin-left: 32px;
  }
-.descrip{
+.news_description{
     margin: 0px;
     padding: 0px;
     height: 95px;
@@ -199,7 +200,7 @@ ul, li{
     padding: 0px;
     height: 86px;
 }
-.data{
+.news_time{
     margin: 0;
     height: 30px;
 }
@@ -263,7 +264,6 @@ ul, li{
  }
  .articles_container{
     height: 597px;
-    border: 1px solid #BB2CFF;
     box-sizing: border-box;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -284,6 +284,7 @@ ul, li{
     margin-bottom: 40px;
     margin-top: 0px;
     height: 30px;
+    color: #7D7D7D;
  }
  .article{
     width: 444px;
@@ -318,22 +319,24 @@ ul, li{
     border-radius: 24px;
     margin: 0px;
  }
- .article_btn{
+ .article_button{
     width: 133px;
     height: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    border: none;
+    background: none;
+    padding-left: 0px;
  }
- .article_btn a{
+ .article_button a{
     color: #4A5CFF;
  }
- .article_btn img{
+ .article_button img{
     width: 20px;
     height: 20px;
-    margin-top: 5px;
+    margin-top: 6px;
  }
-.faq_list{
+ .faq_list{
     height: 429px;
     border: 1px solid #BB2CFF;
     box-sizing: border-box;
