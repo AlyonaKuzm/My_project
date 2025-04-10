@@ -162,14 +162,24 @@ ul, li{
 .news_button a{
     color: #4A5CFF;
  }
- .news_button img{
-    width: 20px;
-    height: 20px;
-    margin-top: 6px;
+ .news_button svg path{
+    fill: #4A5CFF;
+    transition: fill 0.3s ease;
  }
- .news_button img:hover{
+ .news_button:hover svg path{
     fill: #7E88E4;
  }
+ .news_button:active svg path{
+    fill: #3745C4;
+ }
+ .news_button svg {
+        margin-top: 6px;
+        width:20px;
+        height:20px;
+ }
+ /*.news_button img:hover{
+    fill: #7E88E4;
+ }*/
 
  .news_button{
     width: 118px;
@@ -331,10 +341,20 @@ ul, li{
  .article_button a{
     color: #4A5CFF;
  }
- .article_button img{
-    width: 20px;
-    height: 20px;
-    margin-top: 6px;
+ .article_button svg path{
+    fill: #4A5CFF;
+    transition: fill 0.3s ease;
+ }
+ .article_button:hover svg path{
+    fill: #7E88E4;
+ }
+ .article_button:active svg path{
+    fill: #3745C4;
+ }
+ .article_button svg {
+        margin-top: 6px;
+        width:20px;
+        height:20px;
  }
  .faq_list{
     height: 429px;
