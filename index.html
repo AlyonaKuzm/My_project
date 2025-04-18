@@ -120,12 +120,17 @@
                         </button>
                     </div>
                 </div> 
-                <div class="pages">
-
+                <div class="pagination">
+                    <span class="page-item active">1</span>
+                    <span class="page-item">2</span>
+                    <span class="page-item">3</span>
+                    <span class="page-item">4</span>
+                    <span class="page-item">...</span>
+                    <span class="page-item">20</span>
                 </div>                           
             </div>
         </section>
-        <section>
+        <section id="big_banner" class="big_banner">
             <div class="container">
                 <div class="banner">
                     <h3 class="medium_title">Мы предлагаем вам узнать удивительные факты о нашей вселенной и углубить свои знания о планах человечества по освоению космоса</h3>
@@ -188,9 +193,23 @@
         
         <section id="mail" class="mail">            
             <div class="container">
-                <h2 class="sub_title">Вы готовы отправиться в увлекательное путешествие к звездам?</h2>
-                <div class="email">
-
+                <div class="mail_wrapper">
+                    <div class="mail_header">
+                        <h2 class="sub_title">Вы готовы отправиться <br>в увлекательное путешествие к звездам?</h2>
+                    </div>
+                    <div class="mail_info">
+                        <div class="mail_input">
+                            <form class="email-form">
+                                <img src="pictures/letter.svg" alt="">
+                                <input type="email" id="email" name="'email" placeholder="Email" required class="mail_input_window">
+                                <button type="submit" class="mail_picture"><img src="pictures/arrow Right.svg"></button>
+                            </form>                            
+                        </div> 
+                        <div class="mail_line"></div>
+                        <div class="mail_politics">
+                            <p>Подписываясь на рассылку, вы соглашаетесь с <a href="#">Условиями и положениями</a> и <a href="#">Политикой конфиденциальности</a></p>
+                        </div>                       
+                    </div>
                 </div>
             </div>
         </section> 
@@ -198,7 +217,34 @@
         <section id="faq" class="faq">            
             <div class="container">
                 <h2 class="sub_title">Ответы на вопросы</h2>
-                <div class="faq_list">
+                    <div class="faq_accordion">
+                        <div class="faq_item">
+                            <div class="faq_header">
+                                <p class="small_title">Мне на почту не приходит рассылка, что делать?</p>
+                                <button class="vector"><img src="pictures/Vector -.svg"></button>
+                            </div>
+                            <div class="faq_panel">
+                                <p class="">Попробуйте оформить подписку заново. Если это не помогло — напишите нам в поддержку</p>
+                            </div>
+                        </div>
+                        <div class="faq_item">
+                            <div class="faq_header">
+                                <p class="small_title">Почему сайт не работает с VPN?</p>
+                                <button class="vector"><img src="pictures/Vector +.svg"></button>
+                            </div>
+                            <div class="faq_pane faq_hidden">
+                                <p>Попробуйте оформить подписку заново. Если это не помогло — напишите нам в поддержку</p>
+                            </div> 
+                        </div>
+                        <div class="faq_item">
+                            <div class="faq_header">
+                                <p class="small_title">Когда появится приложение?</p>
+                                <button class="vector"><img src="pictures/Vector +.svg"></button>
+                            </div>
+                            <div class="faq_panel faq_hidden">
+                                <p>Попробуйте оформить подписку заново. Если это не помогло — напишите нам в поддержку</p>
+                            </div>
+                        </div>                     
                 </div>
             </div>
         </section>       
